@@ -1,4 +1,10 @@
 #!/bin/bash
+NomiDirectory=`ls -d */`
+for i in $NomiDirectory
+do
+	date > $i/passaggio.txt
+done
+
 
 # 1) Documentati sul comando date
 # 2) Guarda cosa accade col comando echo pippo > file.txt
