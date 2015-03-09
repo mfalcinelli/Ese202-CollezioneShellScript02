@@ -1,4 +1,9 @@
 #!/bin/bash
+nomiDirectory=`cat accounts.txt`
+for i in $nomiDirectory
+do
+	`mkdir $i`
+done
 
 #
 # 1) Nota il risultato del comando cat accounts.txt
